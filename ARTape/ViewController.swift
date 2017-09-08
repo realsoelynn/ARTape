@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     lazy var sceneView: ARSCNView = {
         let view = ARSCNView(frame: CGRect.zero)
         view.delegate = self
+        view.debugOptions = ARSCNDebugOptions.showFeaturePoints
         return view
     }()
 
